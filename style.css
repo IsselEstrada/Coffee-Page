@@ -1,0 +1,68 @@
+/* Tipografía */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #F3EDE4; /* Fondo crema */
+  color: #3e2c23;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6F4E37; /* Marrón café */
+  color: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header .logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+header nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #D4AF37; /* Dorado */
+}
+
+/* FOOTER */
+footer {
+  background-color: #6F4E37;
+  color: white;
+  padding: 1.5rem 2rem;
+  margin-top: 2rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-content .socials {
+  margin-top: 0.5rem;
+}
+
+.footer-content .socials a {
+  color: white;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-content .socials a:hover {
+  color: #D4AF37;
+}
