@@ -1,0 +1,167 @@
+/* Tipografía */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #e4e7f3; /* Fondo crema */
+  color: #3e2c23;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6F4E37; /* Marrón café */
+  color: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header .logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+header nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #D4AF37; /* Dorado */
+}
+
+/* FOOTER */
+footer {
+  background-color: #6F4E37;
+  color: white;
+  padding: 1.5rem 2rem;
+  margin-top: 2rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-content .socials {
+  margin-top: 0.5rem;
+}
+
+
+.footer-content .socials a {
+  color: white;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-content .socials a:hover {
+  color: #D4AF37;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1470&q=80');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Overlay para oscurecer un poco la imagen */
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1;
+  pointer-events: none; /* permite hover/click en elementos encima */
+}
+
+/* Contenido del Hero */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  padding: 12px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  background-color: #ff6f61;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.15s ease, box-shadow 0.15s ease;
+  outline: none;
+}
+
+/* Hover mejorado */
+.hero button:hover,
+.hero button:focus {
+  background-color: #ff3b2e;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+
+    h2{
+      text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+
+    }
+
+    p{
+      text-align: justify;
+      margin: 30px;
+      line-height: 1.9rem;
+      font-size: 25px;
+    }
